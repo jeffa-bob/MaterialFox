@@ -17,6 +17,15 @@
 	padding-inline: 48px 16px !important;
 	max-width: 100% !important;
 	width: auto !important;
+	color: inherit !important;
+}
+
+.urlbarView-row-inner:hover {
+	background-color: var(--toolbar-field-hover-background-color) !important;
+}
+
+.urlbarView-row-inner:focus {
+	background-color: var(--toolbar-field-focus-background-color) !important;
 }
 
 .urlbarView-no-wrap
@@ -153,6 +162,14 @@
 	border: 0 !important;
 }
 
+.searchbar-engine-one-off-item:hover {
+	background-color: var(--toolbarbutton-hover-background) !important;
+}
+
+.searchbar-engine-one-off-item:focus {
+	background-color: var(--toolbarbutton-hover-background) !important;
+}
+
 #urlbar-container
 {
 	max-height: 36px !important;
@@ -167,6 +184,7 @@
 	border: 0 !important;
 	box-shadow: none !important;
 	padding: 2px !important;
+	transform: translateY(4px) !important;
 	background-clip: padding-box !important;
 	transition: background-color .1s var(--ease-basic) !important;
 	-moz-box-align: center !important;
@@ -258,6 +276,10 @@
 	flex: 1 !important;
 }
 
+#urlbar[breakout-extend="true"] .urlbar-input-box {
+	transform: translateX(-9px) !important;
+}
+
 #urlbar-input
 {
 	width: 100% !important;
@@ -284,6 +306,11 @@
 {
 	margin-inline-start: 8px !important;
 	margin-inline-end: 8px !important;
+}
+
+:root[privatebrowsingmode] #urlbar-search-mode-indicator
+{
+	background-color: var(--toolbar-bgcolor) !important;
 }
 
 .urlbarView
@@ -348,6 +375,17 @@
 #identity-icon-box
 {
 	border: 0 !important;
+	padding: 0 !important;
+}
+
+#notification-popup-box {
+	width: auto !important;
+	height: auto !important;
+}
+
+#notification-popup-box image {
+	width: 16px !important;
+	height: 16px !important;
 	padding: 0 !important;
 }
 
